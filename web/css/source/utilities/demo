@@ -1,13 +1,12 @@
 //
-//  Spacing
+//  Flex
 //  ---------------------------------------------
 
 //
 //  Common (styles-m.css)
 //  _____________________________________________
 & when (@media-common = true) {
-  .spacing(@type: m; @view: -; @style: margin);
-  .spacing(@type: p; @view: -; @style: padding);
+  // CODE
 }
 
 //
@@ -15,8 +14,7 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
-  .spacing(@type: m; @view: -s-; @style: margin);
-  .spacing(@type: p; @view: -s-; @style: padding);
+  // CODE
 }
 
 
@@ -25,8 +23,7 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-  .spacing(@type: m; @view: -m-; @style: margin);
-  .spacing(@type: p; @view: -m-; @style: padding);
+  // CODE
 }
 
 
@@ -35,8 +32,7 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
-  .spacing(@type: m; @view: -l-; @style: margin);
-  .spacing(@type: p; @view: -l-; @style: padding);
+  // CODE
 }
 
 
@@ -45,6 +41,5 @@
 //  _____________________________________________
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
-  .spacing(@type: m; @view: -xl-; @style: margin);
-  .spacing(@type: p; @view: -xl-; @style: padding);
+  // CODE
 }

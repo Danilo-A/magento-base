@@ -1,0 +1,70 @@
+//
+//  Mixins
+//  ---------------------------------------------
+
+//  Spacing
+
+.spacing(@type: m; @view; @style) {
+  .spacing-count(@spacing-count);
+  .spacing-count(@n, @i: 0) when (@i =< @n) {
+    .@{type}@{view}@{i} {
+        @{style}: (@i * 100px / 10) !important;
+    }
+    .@{type}t@{view}@{i} {
+      @{style}-top: (@i * 100px / 10) !important;
+    }
+    .@{type}b@{view}@{i} {
+      @{style}-bottom: (@i * 100px / 10) !important;
+    }
+    .@{type}l@{view}@{i} {
+      @{style}-left: (@i * 100px / 10) !important;
+    }
+    .@{type}r@{view}@{i} {
+      @{style}-right: (@i * 100px / 10) !important;
+    }
+    .@{type}x@{view}@{i} {
+      @{style}-right: (@i * 100px / 10) !important;
+      @{style}-left: (@i * 100px / 10) !important;
+    }
+    .@{type}y@{view}@{i} {
+      @{style}-top: (@i * 100px / 10) !important;
+      @{style}-bottom: (@i * 100px / 10) !important;
+    }
+    .spacing-count(@n, (@i + 1));
+  }
+}
+
+//  Font size
+
+.text-sizing(@view) {
+  .text@{view}1 {
+    font-size: 12px !important;
+  }
+  .text@{view}2 {
+    font-size: 14px !important;
+  }
+  .text@{view}3 {
+    font-size: 16px !important;
+  }
+  .text@{view}4 {
+    font-size: 18px !important;
+  }
+  .text@{view}5 {
+    font-size: 20px !important;
+  }
+  .text@{view}6 {
+    font-size: 22px !important;
+  }
+  .text@{view}7 {
+    font-size: 24px !important;
+  }
+  .text@{view}8 {
+    font-size: 26px !important;
+  }
+  .text@{view}9 {
+    font-size: 28px !important;
+  }
+  .text@{view}10 {
+    font-size: 30px !important;
+  }
+}

@@ -1,0 +1,23 @@
+//
+//  Colors
+//  _____________________________________________
+
+.text-color(@i: length(@theme-colors)) when (@i > 0) {
+  .text-color(@i - 1);
+  @color: extract(@theme-colors, @i);
+  .text-@{color} {
+    color: @@color !important;
+  }
+}
+.bg-color(@i: length(@theme-colors)) when (@i > 0) {
+  .bg-color(@i - 1);
+  @color: extract(@theme-colors, @i);
+  .bg-@{color} {
+    background-color: @@color !important;
+  }
+}
+
+& when (@media-common = true) {
+  .text-color();
+  .bg-color();
+}

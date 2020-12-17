@@ -3,8 +3,13 @@
 //  ---------------------------------------------
 
 // Colors - https://github.com/magento/magento2/blob/2.4/lib/web/css/source/lib/variables/_colors.less
-@color-blue1: #79b51f; // primary
-@color-blue2: #66991b; // primary hover
+@primary: #79b51f;
+@primary-dark: darken(@primary, 10%);
+
+@theme-colors: primary; // add colors
+
+@color-blue1: @primary; // primary
+@color-blue2: @primary-dark; // primary hover
 
 //  Color nesting
 @panel__background-color: @color-gray-light0;
